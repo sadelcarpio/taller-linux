@@ -11,3 +11,12 @@
 
 ## Pasos a seguir
 Utilizar una distribución de Linux (puede ser cloud shell, wsl o nativo)
+```shell
+$ touch .env
+# Agregar GOOGLE_API_KEY a .env
+GOOGLE_API_KEY=<api-key>
+$ export PROJECT_ID=<tu-project-id>
+$ make configure-gcloud
+$ make enable-gcloud-apis
+$ make deploy
+```
