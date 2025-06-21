@@ -22,7 +22,14 @@ $ touch .env
 # Agregar GOOGLE_API_KEY a .env
 GOOGLE_API_KEY=<api-key>
 $ export PROJECT_ID=<tu-project-id>
+# Login con gcloud
 $ make configure-gcloud
+# Habilitar APIs
 $ make enable-gcloud-apis
+# Desplegar toda la aplicación (Artifact Registry, Secrets, Cloud Run)
+$ make deploy-all
+# Redeploy de aplicacion (despues de deploy-all)
 $ make deploy
+# Limpiar todos los recursos
+$ make delete-all
 ```
